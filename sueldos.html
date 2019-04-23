@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ventas por categoria</title>
+</head>
+
+<body>
+    <script>
+    let as,ns,cat;
+    as=parseInt(prompt("Ingrese el sueldo del empleado"))
+    
+    if(as>1950){
+    ns=as*0.15+as;
+    cat=1;
+  }
+  else if(as>1430){
+    ns=(as*0.10)+as;
+    cat=2;
+  }
+  else if(as>910){
+    ns=(as*0.08)+as;
+    cat=3;
+  }
+
+  else if(as>380){
+    ns=(as*0.07)+as;
+    cat=4;
+  }
+
+  else{
+    alert("El sueldo es menor al salario basico");
+  }
+    
+    document.write(`El sueldo pertenece a la categoria ${cat}<br/>`)
+    document.write(`Antiguo sueldo = $ ${as}<br/>`)
+    document.write(`Nuevo sueldo = $ ${ns}<br/>`)
+    
+    
+    </script>
+</body>
+
+
+</html>
